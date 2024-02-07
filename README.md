@@ -1,7 +1,10 @@
 # 서울대공원 <!-- omit in toc -->
+###[기획서 보기](./project1.pdf)
 > 서울대공원을 **리디자인하여 구현**한 프로젝트입니다.
 > 배포화면 보기 [사이트보기](https://rustymotor.github.io/project1/)
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+
+
 
 ## 목차 <!-- omit in toc -->
 - [프로젝트 제작동기](#프로젝트-제작동기)
