@@ -1,0 +1,729 @@
+*{padding:0;margin:0;list-style:none;}
+a{text-decoration:none;color:black;}
+/* .blur {
+    backdrop-filter: blur(10px);
+} */
+
+.pr{
+    position:relative;
+}
+.pa{position:absolute;}
+.fx{
+    display:flex;
+}
+.inner{
+    width:100%;
+    max-width:1224px;
+    margin:auto;
+    /* background:#ffffff6b; */
+}
+.inner2{
+    width:100%;
+    margin:auto;
+    background:#ffffff6b;
+}
+header{height:140px;}
+/* main{height:2000px;} */
+
+
+/* .banner{
+    height:728px; 
+    background:rgb(228, 112, 128);
+} */
+.quick{
+    position:fixed;
+    width:60px;
+    height:60px;
+    background-color: var(--accent);
+    border-radius:50%;
+    top:100px;
+    right:50px;
+    z-index:100;
+    padding:15px 10px 10px 15px;
+}
+.quick>img{
+    width:30px;
+    opacity:.4;
+}
+.quick>ul{
+    position:fixed;
+    right:40px;
+    padding:10px;
+    display:none;
+    width:100px;
+    height:300px;
+    background:rgba(56, 56, 56, .9);
+}
+.quick li{padding-top:20px;}
+.quick a{color:white;}
+.quick:hover >ul{display:block}
+.content2{
+    height:10%;
+}
+
+/* 여기까지는 기본 */
+/* 여기부터 header_top----------------------- */
+.header_top{    
+    height:47px;
+    background:rgb(255, 255, 255);
+}
+.top{
+    float:right;
+    gap:20px;
+}
+.header_top>.inner{
+    padding:15px;
+    /* padding-bottom:25px; */
+}
+.header_top a{
+    color:var(--text2);
+    font-size:1.3rem;
+    font-weight:500;
+}
+.top_desc{
+    display:inline-block;
+    transform: translateX(40px);
+}
+
+/* 여기부터 header_bottom_banner --------------------*/
+
+
+.header_bottom_banner{
+    height:821px;
+    overflow:hidden;
+}
+
+.inner2>img{
+    width:100%;  
+    
+}
+/* 여기부터 header_bottom --------------------*/
+.header_bottom{
+    height:70px;
+    /* background:rgb(147, 219, 203); */
+}
+.glass{
+background: rgba( 255, 255, 255,0.5 );
+/* box-shadow: 0 8px 32px 0 rgb(127, 127, 127); */
+backdrop-filter: blur( 5px );
+}
+
+h1.logo>a:nth-child(1){
+    top:10px;
+}
+h1.logo>a:nth-child(2){
+    top:10px;
+    left:50px;
+}
+.gnb{
+    left:300px;
+    margin-left: 300px;
+    width:900px;
+    margin-bottom:60px;
+} 
+
+.gnb li{
+    padding:20px;
+    padding-top:30px;    
+}
+
+nav{width:100%; height:9.4rem;}
+.dep2{display:flex; }
+.dep2>li{
+    
+    margin-left:100px;
+    padding:0px;
+    width:400px;
+}
+.dep2 dt{
+    padding:10px 0 0 0;
+}
+.dep2 dl{
+    padding-top:20px;
+    margin-bottom:20px;
+}
+.dep2 h3>a{
+    font-size:2rem;
+    
+}
+.dep2 h3{
+    border-bottom:#555;
+}
+
+/* .dep1{opacity:0;}삭제 */
+/* .dep1:nth-child(1){opacity:1;} 삭제 */
+.w100{
+    position:absolute;
+    width:100%;
+    background:rgb(255, 255, 255);
+    left:0;
+    top:70px;
+    height:0px; /* 0으로 수정 */
+    padding:0 0;
+    overflow:hidden;
+    transition:padding .5s;
+    box-shadow:0 2px 2px rgba(0,0,0/7%);
+}
+.gnb li:hover .w100{
+    padding:20px 0;
+    height:auto;
+    box-shadow:0 10px 10px rgba(0,0,0,.3);
+}
+
+.imggnb{
+    width:100px;
+    margin:22px;
+
+ }
+/* 여기부터 아이콘------------------------- */
+.icon{
+    width:1050px;
+    height:120px;
+    border-radius:50px;
+    background:white;
+    top:900px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    overflow:hidden;
+    
+    align-items:center;
+}
+.icon>div{
+    background:rgb(72, 126, 85);
+    padding:65px 40px 50px 60px;
+    font-size:2rem;
+    color:var(--white);
+    text-align:center;
+    line-height:2rem;
+}
+.icon>div>p:nth-child(2){
+    padding-top:10px;
+    font-size: 1.2rem;
+}
+.icon>div>p>i{
+    position:absolute;
+    left:27px;
+    top:29px;
+    color:rgb(41, 41, 41);
+}
+.icon ul{
+    margin:auto;
+}
+.icon li{   
+    padding: 3rem;
+    font-size:1.5rem;
+    font-weight:800;
+    text-align:center;   
+}
+.icon i{padding-top:1.5rem;color:rgb(85, 97, 88);}
+.icon li >p{
+    padding:2rem;
+}
+
+/* 여기부터 content1-동물원/식물원/산림휴양 */
+.content1{
+    height:700px;
+    background:rgb(255, 255, 255);
+    z-index:2;
+}
+.content1>.inner{
+    margin-top:896px;
+    gap:24px;
+    flex:1 1 0;
+}
+
+.zoo,.sikmul,.sanrim{
+    width:380px;
+    height:450px;
+    box-shadow: 4px 20px 40px 10px rgba(68, 83, 70, 0.3);
+    top:120px;
+    border-radius:5%;
+    overflow:hidden;
+}
+.zoo{
+    background:url(./img/parrot.jpg);
+    left:0;
+}
+.sikmul{
+    background:url(./img/botan.png);
+    left:50%;
+    transform:translateX(-50%);
+}
+.sanrim{
+    background:url(./img/sanrim.png);
+    right:0;
+}
+.zooa,.sikmula,.sanrima{ /* 내용 */
+    background:rgba( 255, 255, 255,0.8 );
+    width:380px;
+    height:120px;
+    bottom:0px;
+}
+.content1 a{
+    font-size:25px;
+    font-weight:500;
+    display:block;
+    float:left;
+    padding:30px 0 0px 50px;
+    color:rgb(58, 58, 58,.9);
+}
+.content1 a+p{
+    font-size:14px;
+    display:block;
+    float:left;
+    padding:20px 60px 10px 50px;
+    color:rgb(58, 58, 58);
+}
+.content1:after{ /* 배경 코끼리/이거 때문에 content1에 pr 줬음 */
+    background:url(./img/elephant.png) no-repeat;
+    position:absolute;
+    content:'';
+    height:1000px;
+    width:700px;
+    top:25%;
+    right:0;
+    z-index:-1;
+    opacity:.5;
+}
+.content1:before{ /* 배경발자국/이거 넣으니까 코끼리 사라짐 */
+    background:url(./img/footprint.png) no-repeat;
+    position:absolute;
+    content:'';
+    height:500px;
+    width:700px;
+    top:20%;
+    left:0;
+    z-index:-1;
+    opacity:.4;
+    user-select: none;
+} 
+.content2:before{ /* 사슴 그림*/
+    background:url(./img/dear.png) no-repeat;
+    position:absolute;
+    content:'';
+    height:1000px;
+    width:700px;
+    top:190%;
+    left:0;
+    z-index:-1;
+    opacity:.3;
+    user-select: none;
+    transform:scaleX(-1);
+
+} 
+/* 여기부터 content2-공지사항 */
+.content2{
+    height:640px;
+}
+.notice{
+    background:white;
+    width:560px;
+    height:520px;
+    top:50px;
+    border-radius:5%;
+    padding:40px;
+    padding-top:30px;
+    box-shadow: 4px 4px 50px 30px rgba(194, 191, 191, 0.5);
+    
+}
+.notice>ul,h2{
+    padding:100ox 0 0 0px; /* position absolute라 작동 안함 */
+    margin-top:10px;
+    margin-bottom:40px;
+}
+.notice>.tabs>h2{
+    font-size:39px;
+}
+.tabs>h2,   /* 소제목 폰트 */
+.tabb>h2,
+.park h3,
+.sns h3{
+    font-size:3.1em;
+    font-weight:500;
+}
+.content3>.inner>h2{
+    margin-left:40px;
+    font-size:31px;
+    font-weight:500;
+}
+.notice>h2:nth-of-type(1){
+    font-weight:600;
+    padding-bottom:10px;
+    color:var(--primary2);
+}
+.notice>ul:nth-of-type(1),h2{
+    padding-left:10px;
+}
+
+.tabs>ul>li{  /* 공지/채용/입찰*/
+    font-size:2rem;
+    margin-right:40px;
+}
+.tabs>label{
+    display:inline-block;
+    margin:20px 0 0 10px;
+}
+
+.tabs .panel:before{    /* 공지/채용/입찰밑의 선 */
+    position:absolute;
+    content:"";
+    width:470px;
+    height:1px;
+    top:30px;
+    margin:0;
+    background:rgb(54, 54, 54);
+}
+.tabs>.panel>.pa>li{  /* 공지사항 맨 밑 공지내용 */
+    position:relative;
+    padding:10px;
+}
+.tabs>.panel>.pa>li:before{  /* 리스트 불릿 기호 */
+	position:absolute;
+	content:"";
+	width:5px;
+	height:5px;
+	background-color:rgb(12, 71, 12);
+	border-radius:50%;
+	top:50%;
+	transform:translateY(-50%);
+	left:-2rem;
+}
+.tabs>.panel>.pa>li:after{   /* 리스트 선 */
+    position:absolute;
+    content:"";
+    width:450px;
+    height:1px;
+    margin:10px;
+    background:rgb(199, 199, 199);
+}
+.tabs>.panel>ul>li{
+    width:440px;
+}
+.date{
+    position:absolute;
+    right:0;   
+}
+
+/* .tabs input{opacity:0;}  */ /* tab기능 */
+.tabs>label{
+    font-size:2rem;
+    margin-right:20px;
+}
+.tabs>label:not(:nth-of-type(3)):after{
+    position:absolute;
+    content:'';
+    width:1px;
+    height:20px;
+    background:rgb(54, 54, 54);
+    margin-left:21px;
+}
+.tabs>.panel>ul{
+    padding:40px;
+    opacity:0;
+}
+.tabs input:checked+label{  /* 미리 선택자에 표시하기 */
+    background:var(--primary1);
+    text-align:center;
+    font-weight:600;
+    border-radius:20px;
+    padding:10px;
+
+}
+.tabs input{display:none;}
+
+label:hover{
+    background-image:linear-gradient(#777,#666)
+}
+
+.tabs #one:checked~.panel ul.notice_list{
+    opacity:1;
+}
+.tabs #two:checked~ .panel>ul:nth-of-type(2){
+    opacity:1;
+}
+.tabs #three:checked~ .panel>ul:last-child{
+    opacity:1;
+}
+
+/* content2 홍보배너 */
+.advertise{
+    position:absolute;
+    background:rgba(255, 255, 255, 0.637);
+    width:500px;
+    height:520px;
+    top:50px;
+    right:0;
+    border:1px solid rgb(196, 196, 196);
+    border-radius:5%;
+    padding:30px;
+    z-index:10;
+    box-shadow: 4px 4px 50px 30px rgba(194, 191, 191, 0.5);
+    
+}
+.advertise>h2{
+    display:inline-block;
+    margin:0 0 15px 40px;
+    padding-top:10px;
+    font-weight:500;
+    color:var(--primary2);
+}
+.advertise>img{
+    width:480px;
+    border-radius:30px;
+    transform:translateX(-10%);
+}
+/* content3 프로그램 */
+.content3{
+    height:500px;
+    /* background:rgb(211, 211, 211); */
+}
+.content3>.inner>div{
+    width:350px;
+    height:400px;
+    margin:auto;
+    margin-top:7%;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:1px 1px 10px rgba(171, 175, 170, 0.541);
+}
+.content3 img{
+    width:100%;
+}
+.content3>.inner{
+    flex: 1 1 30%;
+}
+/* .circle{
+    width:70px;
+    height:70px;
+    top:250px;
+    left:265px;
+    border-radius:50%;
+    background:rgb(75, 116, 89);
+    z-index:1;
+}
+.circle>p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:20px;
+} */
+.content3>.inner>div :after{
+    position:absolute;
+    content:'종료';
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgb(102, 102, 102);
+    top:-15%;
+    left:74%;
+    line-height:65px;
+    font-size:2rem;
+    text-align:center;
+}
+
+.proga{
+    width:100%;
+    height:200px;
+    background:white;
+    top:70%;
+    padding:40px 30px 30px 30px;
+    
+}
+.proga>h4{
+    font-size:1.6rem;
+    font-weight:200;
+    display:block;
+    margin-bottom:15px;
+}
+.proga>div{
+    font-size:1.8rem;
+    font-weight:400;
+    width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    word-break:break-all;
+}
+/* .prog3{
+    right:0;
+}
+.prog2{
+    left:50%;
+    transform:translateX(-50%);
+} */
+
+/* ====================================
+    ======= content4 ======    
+==================================== */
+.content4{
+    height:600px;
+    /* background:rgba(172, 172, 172, 0.445); */
+}
+.vr{
+    padding:30px;
+}
+.vr label:not(:nth-of-type(4)):after{
+    content:'';
+    position:absolute;
+    width:1px;
+    height:15px;
+    background:#555;
+    margin-left:10px;
+}
+.vrimg,.snsimg{
+    width:500px;
+    height:400px;
+    border-radius:10%;
+    top:30px;
+    overflow:hidden;
+}
+.content4 img{
+    height:100%;
+}
+.tabb>label{font-size:2rem;}
+.tabb input{opacity:0;}
+.tabb>.panel>div{opacity:0;}
+.tabb #vr1:checked~ .panel>div:first-child{
+    opacity:1;
+}
+.tabb #vr2:checked~ .panel>div:nth-child(2){
+    opacity:1;
+}
+.tabb #vr3:checked~ .panel>div:nth-child(3){
+    opacity:1;
+}
+.tabb #vr4:checked~ .panel>div:last-child{
+    opacity:1;
+}
+.park{
+    width:400px;
+    height:250px;
+    top:150px;
+   
+}
+/* 패키지/할인권 */
+.sns,.park{
+    left:750px;
+    top:60px;
+}
+.park_img{
+    top:40px;
+    left:60px;
+    margin-top:30px;
+    width:400px;
+    height:250px;
+    overflow:hidden;
+    border-radius:30px;
+    
+}
+.park_img>img{
+    width:400px;
+    height:350px;
+   
+}
+
+
+
+/* sns */
+
+.sns{
+    width:400px;
+    height:100px;
+    top:420px;
+    border: 1px solid #555;
+    border-radius: 30px;
+    display:flex;
+    padding:15px;
+}
+.sns h3{
+    width:100px;
+    display:block;
+    padding-right:20px;
+    font-size:2rem;
+    background:white;
+    margin:12px 0 0 10px;
+    /* background: var(--primary1); */
+}
+.sns_icon{
+    margin-top:5px;
+}
+.sns_icon>div{margin-right:20px;}
+.sns_icon img{
+    width:50px;height:50px;
+}
+
+/* ====================================
+    ======= content5. 아카이브 ======    
+==================================== */
+.content5{
+
+    height:500px;
+}
+.content5>.inner>div{
+    
+    margin:30px auto;
+    width:1000px;
+    height:300px;
+}
+.content5>.inner{
+    overflow:hidden;
+}
+
+/* ====================================
+    ======= footer임 ======    
+==================================== */
+footer{
+    height:196px;
+    background:rgb(192, 192, 192);
+    padding:30px;
+}
+
+.select>ul{
+    position:absolute;
+    width:300px;
+    height:100px;
+    display:none;
+    bottom:20px;
+    background:gray;
+    
+  }
+.select:hover >ul{
+  display:block;
+  overflow-y: scroll;
+}
+.select p{
+  width:300px;
+  font-size:3rem;
+  background:rgb(68, 68, 68);
+  color:white;
+}
+.info{
+    width:800px;
+    margin:auto;
+    margin-top:20px;
+}
+.info>div{
+    display:inline-block;
+    margin-right:30px;
+}
+.address{
+    font-size:1.5rem;
+    width:800px;
+    margin-top:5rem;
+}
+.copyright{
+    font-size:1.5rem;
+    width:800px;
+    margin-top:8rem;
+}
+.call{
+    font-size:2rem;
+    right:10%;
+    top:20%;
+    margin-top:6rem;
+}
+.call>div:nth-child(2){
+    margin-top:1rem;
+    font-size: 4rem;
+}
