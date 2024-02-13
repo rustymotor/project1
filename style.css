@@ -45,7 +45,7 @@ header{height:140px;}
     text-align:center;
 }
 .quick>p{
-    font-size:1.8rem;
+    font-size:1.5rem;
     color:white;
 }
 .quick>img{
@@ -191,12 +191,27 @@ nav{width:100%; height:9.4rem;}
     display:inline-block;
     margin-bottom:10px;
 }
- .imggnb>.material-symbols-outlined{ /* gnb 사이트맵 아이콘*/
+.imggnb>div{
+    display:inline-block;
+}
+.imggnb .material-symbols-outlined{ /* gnb 사이트맵 아이콘*/
     display:inline-block;
     margin-left:10px;
     margin-bottom:10px;
     font-size:35px;
     color:black;}
+.sitemap{
+    top:100px;
+    left:300px;
+    width:1000px;
+    height:1000px;
+    background:rgb(255, 255, 255);
+    display:none;
+    z-index:10000;
+}
+.imggnb>div:hover .sitemap{
+    display:block;
+}
 /* 여기부터 아이콘------------------------- */
 .icon{
     width:1050px;
@@ -300,7 +315,7 @@ nav{width:100%; height:9.4rem;}
 .content1 .n1ame{
     font-size:25px;
     font-weight:500;
-    display:inline-block;
+    
     padding:0px 0 0px 50px;
     margin: 30px 0 20px 0;
     float:left;
@@ -747,12 +762,11 @@ label:hover{
 
     height:500px;
 }
-.content5>.inner>div{
-}
+
 .arca{
-    width:200px;
-    height:200px;
-    margin:50px;
+    width:250px;
+    height:250px;
+    margin:20px;
     overflow:hidden;
 }
 .content5>.inner{
