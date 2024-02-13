@@ -40,6 +40,7 @@ header{height:140px;}
     right:50px;
     z-index:100;
     padding:15px 10px 10px 15px;
+    
 }
 .quick>img{
     width:30px;
@@ -53,6 +54,7 @@ header{height:140px;}
     width:100px;
     height:300px;
     background:rgba(56, 56, 56, .9);
+    transition:all 0.5s;
 }
 .quick li{padding-top:20px;}
 .quick a{color:white;}
@@ -175,9 +177,18 @@ nav{width:100%; height:9.4rem;}
 
 .imggnb{
     width:100px;
-    margin:22px;
-
+    margin:22px 0 22px 22px;
  }
+.imggnb>img{
+    display:inline-block;
+    margin-bottom:10px;
+}
+ .imggnb>.material-symbols-outlined{ /* gnb 사이트맵 아이콘*/
+    display:inline-block;
+    margin-left:10px;
+    margin-bottom:10px;
+    font-size:35px;
+    color:black;}
 /* 여기부터 아이콘------------------------- */
 .icon{
     width:1050px;
@@ -207,7 +218,7 @@ nav{width:100%; height:9.4rem;}
     position:absolute;
     left:27px;
     top:29px;
-    color:rgb(41, 41, 41);
+    
 }
 .icon ul{
     margin:auto;
@@ -218,15 +229,29 @@ nav{width:100%; height:9.4rem;}
     font-weight:800;
     text-align:center;   
 }
-.icon i{padding-top:1.5rem;color:rgb(85, 97, 88);}
+.icon i{padding-top:1.5rem;}
 .icon li >p{
     padding:2rem;
+}
+.icon li p{
+    color:#555;
+    transition:all 0.3s;
+}
+.icon li:hover p{
+    color:var(--accent);
+}
+.icon li i{
+    color:#555;
+    transition:all 0.3s;
+}
+.icon li:hover i{
+    color:var(--accent);
 }
 
 /* 여기부터 content1-동물원/식물원/산림휴양 */
 .content1{
     height:700px;
-    background:rgb(255, 255, 255);
+    background:0;
     z-index:2;
 }
 .content1>.inner{
@@ -238,7 +263,7 @@ nav{width:100%; height:9.4rem;}
 .zoo,.sikmul,.sanrim{
     width:380px;
     height:450px;
-    box-shadow: 4px 20px 40px 10px rgba(68, 83, 70, 0.3);
+    box-shadow: 4px 20px 30px 10px rgba(68, 83, 70, 0.3);
     top:120px;
     border-radius:5%;
     overflow:hidden;
@@ -259,24 +284,47 @@ nav{width:100%; height:9.4rem;}
 .zooa,.sikmula,.sanrima{ /* 내용 */
     background:rgba( 255, 255, 255,0.8 );
     width:380px;
-    height:120px;
-    bottom:0px;
+    height:150px;
+    bottom:-70px;
+    transition:all 0.3s;
 }
-.content1 a{
+
+.content1 .n1ame{
     font-size:25px;
     font-weight:500;
-    display:block;
+    display:inline-block;
+    padding:0px 0 0px 50px;
+    margin: 30px 0 20px 0;
     float:left;
-    padding:30px 0 0px 50px;
-    color:rgb(58, 58, 58,.9);
+    color:#3a3a3ae6;
+    
 }
-.content1 a+p{
+.content1 .material-symbols-outlined{
+    display:inline-block;
+    font-size:30px;
+    color:#7a7a7a;
+    padding: 27px 0 0 0px;
+    margin:0px 0 0 10px;
+    transition:all 0.3s;
+}
+.content1 p{
     font-size:14px;
     display:block;
     float:left;
     padding:20px 60px 10px 50px;
-    color:rgb(58, 58, 58);
+    color:rgba(58, 58, 58, 0);
 }
+.zoo:hover .zooa{bottom:0px;}
+.sikmul:hover .sikmula{bottom:0px;}
+.sanrim:hover .sanrima{bottom:0px;}
+.zoo:hover .zooa>p{color:rgb(58, 58, 58);}
+.sikmul:hover .sikmula>p{color:rgb(58, 58, 58);}
+.sanrim:hover .sanrima>p{color:rgb(58, 58, 58);}
+.zoo:hover .material-symbols-outlined{color:var(--primary1);}
+.sikmul:hover .material-symbols-outlined{color:var(--primary1);}
+.sanrim:hover .material-symbols-outlined{color:var(--primary1);}
+
+
 .content1:after{ /* 배경 코끼리/이거 때문에 content1에 pr 줬음 */
     background:url(./img/elephant.png) no-repeat;
     position:absolute;
@@ -332,17 +380,20 @@ nav{width:100%; height:9.4rem;}
 .notice>ul,h2{
     padding:100ox 0 0 0px; /* position absolute라 작동 안함 */
     margin-top:10px;
-    margin-bottom:40px;
+    margin-bottom:20px;
 }
-.notice>.tabs>h2{
-    font-size:39px;
-}
+
 .tabs>h2,   /* 소제목 폰트 */
 .tabb>h2,
 .park h3,
 .sns h3{
     font-size:3.1em;
     font-weight:500;
+}
+.notice>.tabs>h2{
+    padding-top:20px;
+    font-size:39px;
+    color:var(--text1);
 }
 .content3>.inner>h2{
     margin-left:40px;
@@ -370,9 +421,10 @@ nav{width:100%; height:9.4rem;}
 .tabs .panel:before{    /* 공지/채용/입찰밑의 선 */
     position:absolute;
     content:"";
-    width:470px;
+    width:455px;
     height:1px;
     top:30px;
+    left:20px;
     margin:0;
     background:rgb(54, 54, 54);
 }
@@ -394,10 +446,10 @@ nav{width:100%; height:9.4rem;}
 .tabs>.panel>.pa>li:after{   /* 리스트 선 */
     position:absolute;
     content:"";
-    width:450px;
+    width:420px;
     height:1px;
     margin:10px;
-    background:rgb(199, 199, 199);
+    background:rgb(218, 218, 218);
 }
 .tabs>.panel>ul>li{
     width:440px;
@@ -412,7 +464,7 @@ nav{width:100%; height:9.4rem;}
     font-size:2rem;
     margin-right:20px;
 }
-.tabs>label:not(:nth-of-type(3)):after{
+.tabs>label:not(:nth-of-type(4)):after{
     position:absolute;
     content:'';
     width:1px;
@@ -444,7 +496,10 @@ label:hover{
 .tabs #two:checked~ .panel>ul:nth-of-type(2){
     opacity:1;
 }
-.tabs #three:checked~ .panel>ul:last-child{
+.tabs #three:checked~ .panel>ul:nth-of-type(3){
+    opacity:1;
+}
+.tabs #four:checked~ .panel>ul:last-child{
     opacity:1;
 }
 
@@ -474,6 +529,20 @@ label:hover{
     width:480px;
     border-radius:30px;
     transform:translateX(-10%);
+}
+.move{
+    margin-left:40px;
+    width:100px;
+    display:inline-block;
+}
+.pause {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    margin:0 0 6px 10px;
 }
 /* content3 프로그램 */
 .content3{
@@ -566,13 +635,13 @@ label:hover{
 .vr{
     padding:30px;
 }
-.vr label:not(:nth-of-type(4)):after{
+.vr label:not(:nth-of-type(4)):after{ /* 동물원 옆에 선*/
     content:'';
     position:absolute;
     width:1px;
     height:15px;
     background:#555;
-    margin-left:10px;
+    margin:0 10px 0 10px;
 }
 .vrimg,.snsimg{
     width:500px;
@@ -598,6 +667,13 @@ label:hover{
 }
 .tabb #vr4:checked~ .panel>div:last-child{
     opacity:1;
+}
+.tabb input:checked+label{  /* 미리 선택자에 표시하기 */
+    background:var(--primary1);
+    text-align:center;
+    font-weight:600;
+    border-radius:20px;
+    padding:10px;
 }
 .park{
     width:400px;
