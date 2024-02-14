@@ -4,3 +4,14 @@ const btn = document.querySelector('.popup>span');
 btn.onclick=function(){
     pop.style.display="none";
 } 
+
+
+const ham = document.querySelector('.map');
+const close = document.querySelector('.map_head>a');
+const sitemap = document.querySelector('sitemap');
+ham.onclick=function(){
+    sitemap.style.display="block";
+}
+close.onclick=function(){
+    sitemap.style.display="none";
+}

@@ -1,0 +1,19 @@
+a:focus{
+    background-color: #000;
+    color:white;
+    outline:dashed 3px #f00;
+}
+.skip_menu a{                       
+    position:absolute;
+    width:100%;
+    color:#fff;
+    text-decoration:none;
+    top:0;
+    left:0;
+    background-color: #000;
+    transform:translateY(-100%);
+    transition:0.3s;
+}
+.skip_menu a:focus{
+    transform:translateY(0);
+}

@@ -20,13 +20,16 @@ a{text-decoration:none;color:black;}
     margin:auto;
     /* background:#ffffff6b; */
 }
-.inner2{
-    width:100%;
-    margin:auto;
-    background:#ffffff6b;
-}
 
-header{height:140px;}
+.main_visual{
+    height:920px;
+    overflow:hidden;
+}
+.main_visual>img{
+    width:100%; 
+    top:0; 
+    z-index:-100;
+}
 /* main{height:2000px;} */
 
 
@@ -75,10 +78,21 @@ header{height:140px;}
 
 /* 여기까지는 기본 */
 /* 여기부터 header_top----------------------- */
+header{
+    height:960px;
+    
+}
 .header_top{    
     height:47px;
     background:rgb(255, 255, 255);
 }
+.header_bottom_banner{
+    height:calc(100vh - 40px);
+    overflow:hidden;
+}
+.header_bottom{
+    height:70px;
+} /* 이거 헤더 아래쪽 높이임 */
 .top{
     float:right;
     gap:20px;
@@ -100,20 +114,7 @@ header{height:140px;}
 /* 여기부터 header_bottom_banner --------------------*/
 
 
-.header_bottom_banner{
-    height:821px;
-    overflow:hidden;
-}
 
-.inner2>img{
-    width:100%;  
-}
-
-/* 여기부터 header_bottom --------------------*/
-.header_bottom{
-    height:70px;
-    /* background:rgb(147, 219, 203); */
-}
 .glass{
 background: rgba( 255, 255, 255,0.5 );
 /* box-shadow: 0 8px 32px 0 rgb(127, 127, 127); */
@@ -188,6 +189,7 @@ nav{width:100%; height:9.4rem;}
 .imggnb{
     width:100px;
     margin:22px 0 22px 22px;
+    
  }
 .imggnb>img{
     display:inline-block;
@@ -202,41 +204,72 @@ nav{width:100%; height:9.4rem;}
     margin-bottom:10px;
     font-size:35px;
     color:black;}
+.map{
+    top:70px;
+    left:82%;
+    width:80px;
+    height:80px;
+    z-index:100;
+    text-align:center;
+    justify-content: center;
+}
 .sitemap{
-    top:100px;
-    left:700px;
-    transform:translateX(-50%);
-    width:1200px;
-    height:2000px;
+    position:fixed;
+    margin:auto;
+    top:0px;
+    right:0px;
+    /* transform:translateX(-50%); */
+    width:100%;
+    height:100%;
     background:rgb(255, 255, 255);
-    /* display:none; */
-    z-index:10000;
+    display:none;
+    z-index:100000;
+    overflow-y:scroll;
 }
 .sitemap ul{
-    margin:50px 0 0 50px;
+    margin:50px 0 0 150px;
 }
 .sitemap h2{
     width:150px;
+    font-weight:700;
+    font-size:2.7rem;
+    padding:0;
+}
+.sitemap h3{
+    font-size:2rem;
+}
+.sitemap dt{
+    padding:7psx;
+}
+.sitemap dl{
+    padding-top:10px;
 }
 .sitemap ul li{
     width:150px;
     margin-left:70px;
 }
-
-.imggnb>div:hover .sitemap{
-    display:block;
+.map_head{
+    width:100%;
+    height:30px;
+    background: var(--primary1);
 }
+
+/* .map:hover .sitemap{
+    display:block;
+} */
 /* 여기부터 아이콘------------------------- */
 .icon{
     width:1050px;
     height:120px;
     border-radius:50px;
     background:white;
-    top:900px;
+    top:840px;
     left:50%;
     transform: translate(-50%, -50%);
     overflow:hidden;
     align-items:center;
+    z-index:999;
+    /* display:none; */
 }
 .icon>div{
     background:rgb(72, 126, 85);
@@ -286,12 +319,12 @@ nav{width:100%; height:9.4rem;}
 
 /* 여기부터 content1-동물원/식물원/산림휴양 */
 .content1{
-    height:700px;
-    background:0;
+    margin-top:100px;
+    height:600px;
     z-index:2;
+    
 }
 .content1>.inner{
-    margin-top:896px;
     gap:24px;
     flex:1 1 0;
 }
@@ -310,8 +343,6 @@ nav{width:100%; height:9.4rem;}
 }
 .sikmul{
     background:url(./img/botan.png);
-    left:50%;
-    transform:translateX(-50%);
 }
 .sanrim{
     background:url(./img/sanrim.png);
@@ -321,7 +352,7 @@ nav{width:100%; height:9.4rem;}
     background:rgba( 255, 255, 255,0.8 );
     width:380px;
     height:150px;
-    bottom:-70px;
+    margin-top:350px;
     transition:all 0.3s;
 }
 
@@ -350,9 +381,9 @@ nav{width:100%; height:9.4rem;}
     padding:20px 60px 10px 50px;
     color:rgba(58, 58, 58, 0);
 }
-.zoo:hover .zooa{bottom:0px;}
-.sikmul:hover .sikmula{bottom:0px;}
-.sanrim:hover .sanrima{bottom:0px;}
+.zoo:hover .zooa{margin-top:300px;}
+.sikmul:hover .sikmula{margin-top:300px;}
+.sanrim:hover .sanrima{margin-top:300px;}
 .zoo:hover .zooa>p{color:rgb(58, 58, 58);}
 .sikmul:hover .sikmula>p{color:rgb(58, 58, 58);}
 .sanrim:hover .sanrima>p{color:rgb(58, 58, 58);}
@@ -363,19 +394,15 @@ nav{width:100%; height:9.4rem;}
 
 .content1:after{ /* 배경 코끼리/이거 때문에 content1에 pr 줬음 */
     background:url(./img/elephant.png) no-repeat;
-    position:absolute;
-    content:'';
     height:1000px;
     width:700px;
-    top:25%;
+    top:0;
     right:0;
     z-index:-10;
     opacity:.5;
 }
 .content1:before{ /* 배경발자국/이거 넣으니까 코끼리 사라짐 */
     background:url(./img/footprint.png) no-repeat;
-    position:absolute;
-    content:'';
     height:500px;
     width:700px;
     top:20%;
@@ -401,6 +428,10 @@ nav{width:100%; height:9.4rem;}
 /* 여기부터 content2-공지사항 */
 .content2{
     height:640px;
+}
+.content2>.inner{
+    flex:1 1 0;
+    gap:100px;
 }
 .notice{
     background:white;
@@ -541,7 +572,6 @@ label:hover{
 
 /* content2 홍보배너 */
 .advertise{
-    position:absolute;
     background:rgba(255, 255, 255, 0.637);
     width:500px;
     height:520px;
