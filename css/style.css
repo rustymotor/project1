@@ -331,20 +331,20 @@ header:before{
     background:url(../img/bg1.png) no-repeat;
     position:absolute;
     content:'';
-    width:100%;
+    width:1400px;
     height:900px;
     top:600px;
-    left:0;
+    right:0;
     z-index:-99999999;
 }
 .content1:after{
     background:url(../img/bg2.png) no-repeat;
     position:absolute;
     content:'';
-    width:100%;
+    width:2000px;
     height:900px;
     top:1650px;
-    left:0;
+    left:00px;
     z-index:-99999999;
 }
 .content2:before{
@@ -1041,6 +1041,13 @@ label:hover{
     padding:20px;
     background-color: white;
     
+}
+.content5 span{
+    margin-top:100px;
+    color:#555;
+}
+.content5 h2{
+     margin:30px 0 30px 50px;
 }
 
 /* ====================================
