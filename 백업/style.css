@@ -107,53 +107,8 @@ header{
 }
 
 /* 여기부터 header_bottom_banner --------------------*/
-nav .slide{
-    width:100%;
-    height:900px;
-    background-color: orange;
-    overflow:hidden;
-    z-index:-9999999;
-}
-/* 속성선택자 */
-.slide>div[class*='slide']{
-    position:absolute;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    opacity:0;
-    transition:opacity 1s;
-}
-.slide>div[class*='slide'].on{
-    opacity:1;
-}
-.slide1{
-    background:url(../img/Slide1.jpg) no-repeat center top/cover;
-}
-.slide2{
-    background:url(../img/Slide2.jpg) no-repeat center top/cover;
-}
-.slide3{
-    background:url(../img/Slide3.jpg) no-repeat center top/cover;
-}
-.textbox{ 
-    position:absolute; 
-    right:10%;
-    top:50%;
-    transform:translateY(-50%);
-    width:30%;
-    background-color:rgba(83, 83, 83, 0.473);
-    padding:2%;
-    text-align:center;
-    }
-    .textbox h2{
-        color:#fff;
-        font-size:40px;
-    }
-    .textbox h3{
-        color:#fff;
-        font-size:20px;
-    }
+
+
 
 .glass{
 background: rgba( 255, 255, 255,0.5 );
@@ -282,7 +237,7 @@ nav{width:100%; height:9.4rem;}
     font-size:2rem;
 }
 .sitemap dt{
-    padding:7px;
+    padding:7psx;
 }
 .sitemap dl{
     padding-top:10px;
@@ -372,7 +327,7 @@ nav{width:100%; height:9.4rem;}
     opacity:.4;
     z-index:-99999999;
 }
-header:before{
+.content1:after{
     background:url(../img/bg1.png) no-repeat;
     
     position:absolute;
@@ -383,7 +338,7 @@ header:before{
     right:0;
     z-index:-1000;
 }
-header:after{
+.content2:before{
     background:url(../img/bg2.png) no-repeat;
     position:absolute;
 
@@ -394,7 +349,7 @@ header:after{
     left:0;
     z-index:-99999999;
 }
-main:before{
+.content2:after{
     background:url(../img/bg3.png) no-repeat;
     position:absolute;
     background-size:cover;
@@ -405,7 +360,7 @@ main:before{
     left:0;
     z-index:-99999999;
 }
-main:after{
+.content3:before{
     background:url(../img/bg4.png) no-repeat;
     position:absolute;
     background-size:cover;
@@ -1050,6 +1005,7 @@ label:hover{
     /* background-color: rgb(57, 128, 62); */
     border:1px solid #888;
     padding:40px;
+    background-color: white;
 }
 .content5>.inner>h2{
     font-weight:500;
@@ -1116,7 +1072,9 @@ footer>.inner>.fx{
     margin-left:330px;
    gap:100px;
 }
+.select{
 
+}
 .select>ul{
     position:absolute;
     width:150px;
