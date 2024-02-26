@@ -20,6 +20,10 @@ a{text-decoration:none;color:black;}
     margin:auto;
     /* background:#ffffff6b; */
 }
+.top>li:first-child{
+    width:100px;
+    height:20px;
+}
 
 .main_visual{
     height:920px;
