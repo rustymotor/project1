@@ -385,7 +385,7 @@ header:before{
     height:900px;
     top:700px;
     right:0;
-    z-index:-1000;
+    z-index:-10000000;
 }
 header:after{
     background:url(../img/bg2.png) no-repeat;
