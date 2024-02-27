@@ -1,5 +1,5 @@
 
-document.querySelector('.map>a').onclick=showmap;
+document.querySelector('.burger').onclick=showmap;
 function showmap(){
     document.querySelector(".sitemap").style.display="block";
     return false;

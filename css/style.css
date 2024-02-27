@@ -86,12 +86,15 @@ header{
     background:rgb(255, 255, 255);
 }
 .header_bottom_banner{
-    height:calc(100vh - 40px);
+    height:900px;
     overflow:hidden;
 }
-.header_bottom{
+
+.glass{
+    background: rgba( 255, 255, 255,0.5 );
+    backdrop-filter: blur( 5px );
     height:70px;
-} /* 이거 헤더 아래쪽 높이임 */
+    }
 .top{
     float:right;
     gap:20px;
@@ -113,10 +116,10 @@ header{
 /* 여기부터 header_bottom_banner --------------------*/
 nav .slide{
     width:100%;
-    height:900px;
-    background-color: orange;
-    overflow:hidden;
-    z-index:-9999999;
+    height:100%;
+    background-color: rgba( 255, 255, 255,0 );
+    
+    
 }
 /* 속성선택자 */
 .slide>div[class*='slide']{
@@ -124,12 +127,16 @@ nav .slide{
     width:100%;
     height:100%;
     left:0;
-    top:0;
+    top:0px;
     opacity:0;
     transition:opacity 1s;
+    z-index:-99999999999999;
 }
 .slide>div[class*='slide'].on{
     opacity:1;
+}
+.slidespace{
+    height:1000px;
 }
 .slide1{
     background:url(../img/Slide1.jpg) no-repeat center top/cover;
@@ -140,7 +147,7 @@ nav .slide{
 .slide3{
     background:url(../img/Slide3.jpg) no-repeat center top/cover;
 }
-.textbox{ 
+/* .textbox{ 
     position:absolute; 
     right:10%;
     top:50%;
@@ -157,37 +164,38 @@ nav .slide{
     .textbox h3{
         color:#fff;
         font-size:20px;
-    }
+    } */
 
-.glass{
-background: rgba( 255, 255, 255,0.5 );
-/* box-shadow: 0 8px 32px 0 rgb(127, 127, 127); */
-backdrop-filter: blur( 5px );
+
+
+.logo>a{
+    padding:10px;
 }
 
-h1.logo>a:nth-child(1){
-    top:10px;
-}
-h1.logo>a:nth-child(2){
-    top:10px;
-    left:50px;
-}
 .gnb{
     left:300px;
-    margin-left: 300px;
-    width:900px;
+    margin-left: 200px;
+    width:1000px;
     margin-bottom:60px;
+    margin-right:0;
+    padding-right:0;
 } 
 
 .gnb li{
-    padding:20px;
-    padding-top:30px;    
+    padding:15px;
+    padding-top:30px; 
 }
 /* ====================================
     ======= deps 메뉴 ======    
 ==================================== */
 
 nav{width:100%; height:9.4rem;}
+.dep1 li{
+    margin-right:20px;
+    max-width: 200px;
+    
+}
+
 .dep1>a:hover{
     text-decoration: 4px underline var(--accent);
 }
@@ -240,7 +248,9 @@ nav{width:100%; height:9.4rem;}
  }
 .imggnb>img{
     display:inline-block;
-    margin-bottom:10px;
+    margin:0 0 10px 20px;
+    width:40px;
+    height:30px;
 }
 .imggnb>div{
     display:inline-block;
@@ -251,15 +261,6 @@ nav{width:100%; height:9.4rem;}
     margin-bottom:10px;
     font-size:35px;
     color:black;}
-.map{
-    top:70px;
-    left:79%;
-    width:80px;
-    height:80px;
-    z-index:100;
-    text-align:center;
-    justify-content: center;
-}
 .sitemap{
     position:fixed;
     margin:auto;
@@ -271,6 +272,7 @@ nav{width:100%; height:9.4rem;}
     background:rgb(255, 255, 255);
     display:none;
     z-index:100000;
+    text-align:center;
     overflow-y:scroll;
 }
 .sitemap ul{
@@ -385,7 +387,7 @@ header:before{
     height:900px;
     top:700px;
     right:0;
-    z-index:-10000000;
+    z-index:-1000000000000000000000000000;
 }
 header:after{
     background:url(../img/bg2.png) no-repeat;
@@ -1191,3 +1193,29 @@ footer .fx:last-child{
 .logogrey{
     margin-top:20px;
 }
+/* media query */
+@media (max-width:800px) {
+    .content1>.inner,.gnb,.header_top,.icon,.imggnb{
+        display:none;
+    }
+    .content1{
+        height:0;
+    }
+    .inner{
+        display:block;
+    
+    }
+    .content2{
+        height:1100px;
+    }
+    .content3{
+        height:1400px;
+    }
+    .content4{
+        height:1200px;
+    }
+    .map>a{
+        margin-bottom:100px;
+    }
+
+};
