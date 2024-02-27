@@ -1,4 +1,15 @@
-*{padding:0;margin:0;list-style:none;}
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    box-sizing:border-box;
+}
+/* body{
+    overflow-x:hidden;
+} */
+/* body{
+    box-sizing:border-box;
+} */
 a{text-decoration:none;color:black;}
 /* .blur {
     backdrop-filter: blur(10px);
@@ -36,10 +47,6 @@ a{text-decoration:none;color:black;}
 }
 /* main{height:2000px;} */
 
-/* .banner{
-    height:728px; 
-    background:rgb(228, 112, 128);
-} */
 .quick{
     position:fixed;
     width:100px;
@@ -366,61 +373,73 @@ nav{width:100%; height:9.4rem;}
     color:var(--accent);
 }
 /* 배경 */
-
-.content1:before{
-    background:url(../img/paw.png) no-repeat;
-    position:absolute;
-    content:'';
-    width:100%;
-    height:900px;
-    top:1100px;
-    left:100px;
-    opacity:.4;
-    z-index:-99999999;
+.content1,
+.content2,
+.content3,
+.content4,
+header,
+main {
+	position: relative;
+	width: 100%;
+	height: auto;
 }
-header:before{
-    background:url(../img/bg1.png) no-repeat;
-    
-    position:absolute;
-    content:'';
-    width:100%;
-    height:900px;
-    top:700px;
-    right:0;
-    z-index:-1000000000000000000000000000;
+.content1:before {
+	background: url(../img/paw.png) no-repeat;
+	position: absolute;
+	content: '';
+	width: min(30%, 300px);
+	height: min(50%, 300px);
+	opacity: 0.4;
+	z-index: -1;
+	filter: grayscale(0.3);
 }
-header:after{
-    background:url(../img/bg2.png) no-repeat;
-    position:absolute;
-
-    content:'';
-    width:100%;
-    height:900px;
-    top:1650px;
-    left:0;
-    z-index:-99999999;
+header:before {
+	background: url(../img/bg1.png) no-repeat;
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 900px;
+	top: 700px;
+	right: 0;
+	z-index: -10000000000000000000;
 }
-main:before{
-    background:url(../img/bg3.png) no-repeat;
-    position:absolute;
-    background-size:cover;
-    content:'';
-    width:100%;
-    height:500px;
-    top:2600px;
-    left:0;
-    z-index:-99999999;
+.content2:after {
+	background: url(../img/bg2.png) no-repeat;
+	position: absolute;
+	content: '';
+	width: 110vw;
+	height: min(100vh, 900px);
+	top: -50%;
+	right: 0;
+	filter: grayscale(0.3);
+	opacity: 0.4;
+	z-index: -1;
 }
-main:after{
-    background:url(../img/bg4.png) no-repeat;
-    position:absolute;
-    background-size:cover;
-    content:'';
-    width:100%;
-    height:900px;
-    top:3100px;
-    left:0;
-    z-index:-99999999;
+.content3:before {
+	background: url(../img/bg3.png) no-repeat;
+	position: absolute;
+	background-size: cover;
+	content: '';
+	width: 120%;
+	height: 500px;
+	top: 20%;
+	right: 0;
+	z-index: -1;
+	filter: grayscale(0.3);
+	opacity: 0.4;
+}
+.content4:after {
+	background: url(../img/bg4.png) no-repeat;
+	position: absolute;
+	background-size: cover;
+	content: '';
+	width: 100%;
+	height: 900px;
+	top: -10%;
+	left: 0;
+	z-index: -1;
+	filter: grayscale(0.3);
+	opacity: 0.5;
 }
 /* 여기부터 content1-동물원/식물원/산림휴양 */
 .content1{
@@ -1060,15 +1079,7 @@ label:hover{
 .content5>.inner>h2{
     font-weight:500;
 }
-.content5_bg{
-    width:100%;
-    height:500px;
-    z-index:-10000;
-    /* background: radial-gradient(#4f46e4 20%, transparent 21% ,transparent 79%, #4f46e4 80%);
-    background-size: 3em 3em; */
-    /* background-color: #286251; */
-    opacity: 0.4;
-}
+
 .content5>.inner>.fx{
     gap:15px;
 }
@@ -1087,15 +1098,16 @@ label:hover{
     overflow:hidden;
 }
 .a_img{
+
     height:200px;
     overflow:hidden;
-    
 }
 .arcaa{
     width:250px;
     height:50px;
     padding:20px;
     background-color: white;
+   
     
 }
 .content5 span{
