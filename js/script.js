@@ -8,14 +8,21 @@ $('.popup>span').on('click',function(){
     $('.popup').fadeOut(500)
 })
 
-//pc상태 사이트맵 
-const ham = document.querySelector('.map');
-const close = document.querySelector('.map_head>a');
-const sitemap = document.querySelector('sitemap');
-ham.onclick=function(){
-    sitemap.style.display="block";
-}
-close.onclick=function(){
-    sitemap.style.display="none";
-}
 
+//top 버튼
+//window 내려가면 보여주기
+$(window).scroll(function () {
+    if( $(this).scrollTop() > 100 ){
+      $(".top_btn").addClass("show");
+    }
+    else{
+      $(".top_btn").removeClass("show");
+    }
+    
+  });
+  //누르면 올라가기
+ 
+  $('.top_btn').on('click',function(){
+    window.scrollTo({top : 0, behavior: 'smooth'}); 
+
+  })

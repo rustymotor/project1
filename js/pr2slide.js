@@ -19,7 +19,7 @@
       setTimeout(function () {
         num++;
         list.style.transition = 'margin-left .5s';
-        list.style.marginLeft = -(li_width+120) * num + "px";
+        list.style.marginLeft = -(li_width+80) * num + "px";
         e.preventDefault();
       }, 50);
     });
@@ -33,7 +33,7 @@
       setTimeout(function () {
         num--;
         list.style.transition = 'margin-left .5s';
-        list.style.marginLeft = -(li_width+120) * num + "px";
+        list.style.marginLeft = -(li_width+80) * num + "px";
         e.preventDefault();
       }, 50);
     });

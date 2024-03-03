@@ -1,3 +1,4 @@
+//fadeout 메인비주얼
 const slides=$('.slide>div[class*="slide"]')
 /* setInterval(함수,시간간격) */
 //setInterval(function(){
