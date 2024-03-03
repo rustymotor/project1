@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서울대공원</title>
     <link rel="icon" href="./img/logo1.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/styleslide.css">
     <link rel="stylesheet" href="./css/operable.css">
     <link rel="stylesheet" href="./css/popup.css"> <!--수정사항여기넣음 -->
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     
     
 </head>
@@ -42,7 +40,8 @@
             </ul>
         
         </div><!-- quick menu -->
-        
+        <div class="map pa">
+            <a class="material-symbols-outlined" href="#" >menu</a>
             <div class="sitemap pa">
                 <div class="map_head">
                     <a href="#">close</a>
@@ -304,17 +303,7 @@
                     
                 
             </div> <!-- sitemap -->
-            <div class="psitemap">
-                <ul class="navside">
-                    <li><a href="#">공원안내</a></li>
-                    <li><a href="#">동물원</a></li>
-                    <li><a href="#">식물원</a></li>
-                    <li><a href="#">산림휴양</a></li>
-                    <li><a href="#">신청ㆍ참여</a></li>
-                    <li><a href="#">대공원 다多이슈</a></li>
-                    <li><a href="#">아카이브</a></li>
-                </ul>
-            </div> <!-- psitemap -->
+        </div><!-- map+sitemap -->
 
         <header>
             <div class="header_top">
@@ -322,7 +311,6 @@
                     <a href="#">서울특별시</a>
                     <a href="#" class="top_desc">두둥-초특급 여름 페스티벌!  무더위를 피해서 시원한 공원으로</a>
                     <ul class="top fx">
-                        <li><span id="time"></span></li>
                         <li><a href="#">서울소식</a></li>
                         <li><a href="#">응답소</a></li>
                         <li><a href="#">정보공개</a></li>
@@ -332,334 +320,346 @@
                 </div>
             </div> <!-- //header_top -->
 
-        <div class="header_bottom_banner pr ">
+        <div class="header_bottom_banner ">
+            <!-- <div class="main_visual pa">
+                <img src="./img/goat.jpg" alt="#"> 
+            </div> inner2 염소사진만 -->
+            
             <!-- header_bottom 여기부터 아래 gnb-->
             <nav>
-                    <div class="glass">
-                        <div class="inner fx">
-                            <a class="material-symbols-outlined phmenu"  href="#" >menu</a>
-                            <h1 class="logo fx">
-                                <a  href="#"><img  src="./img/logo1.png" alt="#"></a>
-                                <a  href="#"><img  src="./img/logo.png" alt="#"></a>
-                            </h1>
+                <div class="header_bottom glass pr">
+                    <div class="inner fx">
+                        <h1 class="logo pa">
+                            <a class="pa" href="#"><img  src="./img/logo1.png" alt="#"></a>
+                            <a class="pa" href="#"><img  src="./img/logo.png" alt="#"></a>
+                        </h1>
+                        <ul class="gnb fx">  <!-- ul.gnb.inner -->
+                            <li class="dep1">
+                                <a href="#">공원안내</a>
+                                <div class="w100 pa">
+                                    <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
+                                        <li class="menu_title">
+                                            <h2>공원안내</h2>
+                                                <p>서울대공원 쉽게 이용하기!</p>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">이용정보</a></h3>
+                                            <dl>
+                                                <dt><a href="#">이용요금 및 시간</a></dt>
+                                                <dt><a href="#">입장권 구매</a></dt>
+                                                <dt><a href="#">오시는길</a></dt>
+                                                <dt><a href="#">주차장 이용안내</a></dt>
+                                                <dt><a href="#">공원 내 이동수단</a></dt>
+                                                <dt><a href="#">편의시설</a></dt>
+                                                <dt><a href="#">공원이용안내</a></dt>
+                                                <dt><a href="#">실시간 환경정보</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">관람정보</a></h3>
+                                            <dl>
+                                                <dt><a href="#">시설알아보기</a></dt>
+                                                <dt><a href="#">추천관람코스</a></dt>
+                                                <dt><a href="#">관람안내도</a></dt>
+                                                <dt><a href="#">관람에티켓</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">고객센터</a></h3>
+                                            <dl>
+                                                <dt><a href="#">고객소리함</a></dt>
+                                                <dt><a href="#">자주하는 질문</a></dt>
+                                                <dt><a href="#">분실물센터</a></dt>
+                                                <dt><a href="#">홈페이지 바로잡기</a></dt>
+                                                <dt><a href="#">공원 안전공지</a></dt>
+                                                <dt><a href="#">안전신고센터</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                            </li>
+                            <li class="dep1">
+                                <a href="#">동물원</a>
+                                <div class="w100 pa">
+                                    <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
+                                        <li class="menu_title">
+                                            <h2>동물원</h2>
+                                            
+                                                <p>희망과 삶의 활력이 느껴지는 힐링동물원</p>
+                                            
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">동물원 소개</a></h3>
+                                            <dl>
+                                                <dt><a href="#">서울동물원 소개</a></dt>
+                                                <dt><a href="#">동물원 역사</a></dt>
+                                                <dt><a href="#">AZA 인증</a></dt>
+                                                <dt><a href="#">동물교실</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">동물원 둘러보기</a></h3>
+                                            <dl>
+                                                <dt><a href="#">동물사 소개</a></dt>
+                                                <dt><a href="#">동물원 인기코스</a></dt>
+                                                <dt><a href="#">동물 보유현황</a></dt>
+                                                <dt><a href="#">동물 생태설명회</a></dt>
+                                                <dt><a href="#">이달의 동물</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">동물 이야기</a></h3>
+                                            <dl>
+                                                <dt><a href="#">동물보전이야기</a></dt>
+                                                <dt><a href="#">동물복지이야기</a></dt>
+                                                <dt><a href="#">동물진료방역</a></dt>
+                                                <dt><a href="#">멸종위기동물</a></dt>
+                                                <dt><a href="#">사육사노트</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">어린이동물원</a></h3>
+                                            <dl>
+                                                <dt><a href="#">어린이 동물원 소개</a></dt>
+                                                <dt><a href="#">동물사 소개</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                            </li>
+                            <li class="dep1">
+                                <a href="#">식물원</a>
+                                <div class="w100 pa">
+                                    <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
+                                        <li class="menu_title">
+                                            <h2>식물원</h2>
+                                            
+                                                <p>서울시 최초의 공립 수목원</p>
+                                            
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">식물원 소개</a></h3>
+                                            <dl>
+                                                <dt><a href="#">서울대공원 식물원 소개</a></dt>
+                                                <dt><a href="#">테마가든 소개</a></dt>
+                                                <dt><a href="#">식물원 발자취</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">식물원 둘러보기</a></h3>
+                                            <dl>
+                                                <dt><a href="#">전시온실</a></dt>
+                                                <dt><a href="#">식물 주제원</a></dt>
+                                                <dt><a href="#">식물표본전시관</a></dt>
+                                                <dt><a href="#">식물 보유현황</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">테마가든 둘러보기</a></h3>
+                                            <dl>
+                                                <dt><a href="#">장미원</a></dt>
+                                                <dt><a href="#">주제정원</a></dt>
+                                                <dt><a href="#">테마가든 나들이</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                            </li>
+                            <li class="dep1">
+                                <a href="#">산림휴양</a>
+                                <div class="w100 pa">
+                                    <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
+                                        <li class="menu_title">
+                                            <h2>산림휴양</h2>
+                                            
+                                                <p>숲 속 가득한 음이온을 느껴보세요.</p>
+                                            
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">치유의 숲</a></h3>
+                                            <dl>
+                                                <dt><a href="#">치유의 숲 소개</a></dt>
+                                                <dt><a href="#">산림치유센터 소개</a></dt>
+                                                <dt><a href="#">산림치유 프로그램</a></dt>
+                                                <dt><a href="#">오시는길</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">산림욕장</a></h3>
+                                            <dl>
+                                                <dt><a href="#">산림욕장 소개</a></dt>
+                                                <dt><a href="#">코스별 안내</a></dt>
+                                                <dt><a href="#">대공원 둘레길</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">캠핑장</a></h3>
+                                            <dl>
+                                                <dt><a href="#">캠핑장 소개</a></dt>
+                                                <dt><a href="#">시설안내</a></dt>
+                                                <dt><a href="#">이용안내</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                            </li>
+                            <li class="dep1">
+                                <a href="#">신청ㆍ참여</a>
+                                <div class="w100 pa">
+                                    <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
+                                        <li class="menu_title">
+                                            <h2>신청ㆍ참여</h2>
+                                            
+                                                <p>교육 및 예약을 함께해보세요.</p>
+                                           
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">교육ㆍ행사</a></h3>
+                                            <dl>
+                                                <dt><a href="#">교육 프로그램</a></dt>
+                                                <dt><a href="#">온라인교육</a></dt>
+                                                <dt><a href="#">교육 자료실</a></dt>
+                                                <dt><a href="#">축제행사</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">간편 신청·예약</a></h3>
+                                            <dl>
+                                                <dt><a href="#">광장 예약</a></dt>
+                                                <dt><a href="#">야구장 예약</a></dt>
+                                                <dt><a href="#">캠핑장 예약</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">참여하기</a></h3>
+                                            <dl>
+                                                <dt><a href="#">이벤트</a></dt>
+                                                <dt><a href="#">자원봉사</a></dt>
+                                                <dt><a href="#">동행기금</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                            </li>
+                            <li class="dep1">
+                                <a href="#">대공원 다多이슈</a>
+                                <div class="w100 pa">
+                                    <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
+                                        <li class="menu_title">
+                                            <h2>대공원 다多이슈</h2>
+                                            
+                                                <p>대공원의 이야기가 펼쳐집니다.</p>
+                                            
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">온라인 대공원</a></h3>
+                                            <dl>
+                                                <dt><a href="#">서울대공원 TV</a></dt>
+                                                <dt><a href="#">대공원 앨범</a></dt>
+                                                <dt><a href="#">대공원 스토리</a></dt>
+                                                <dt><a href="#">모바일앱</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">대공원 VR 체험</a></h3>
+                                            <dl>
+                                                <dt><a href="#">동물원 VR</a></dt>
+                                                <dt><a href="#">식물원 VR</a></dt>
+                                                <dt><a href="#">테마가든 VR</a></dt>
+                                                <dt><a href="#">돌고래이야기관 VR</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">오늘의 대공원</a></h3>
+                                            <dl>
+                                                <dt><a href="#">새소식</a></dt>
+                                                <dt><a href="#">채용ㆍ입찰</a></dt>
+                                                <dt><a href="#">언론보도</a></dt>
+                                                <dt><a href="#">뉴스레터</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                            </li>
+                            <li class="dep1">
+                                <a href="#">아카이브</a>
+                                <div class="w100 pa">
+                                    <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
+                                        <li class="menu_title">
+                                            <h2>아카이브</h2>
+                                            
+                                                <p>서울대공원 역사아카이브</p>
+                                            
+                                        </li>
+                                        <li>
+                                            <h3><a href="#">아카이브</a></h3>
+                                            <dl>
+                                                <dt><a href="#">아카이브</a></dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                            </li>
+                        </ul>
+                        <div class="imggnb">
+                            <img src="./img/kor.png" alt="#">
                             
-                            <ul class="gnb fx">  <!-- ul.gnb.inner -->
-                                <li class="dep1">
-                                    <a href="#">공원안내</a>
-                                    <div class="w100 pa">
-                                        <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
-                                            <li class="menu_title">
-                                                <h2>공원안내</h2>
-                                                    <p>서울대공원 쉽게 이용하기!</p>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">이용정보</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">이용요금 및 시간</a></dt>
-                                                    <dt><a href="#">입장권 구매</a></dt>
-                                                    <dt><a href="#">오시는길</a></dt>
-                                                    <dt><a href="#">주차장 이용안내</a></dt>
-                                                    <dt><a href="#">공원 내 이동수단</a></dt>
-                                                    <dt><a href="#">편의시설</a></dt>
-                                                    <dt><a href="#">공원이용안내</a></dt>
-                                                    <dt><a href="#">실시간 환경정보</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">관람정보</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">시설알아보기</a></dt>
-                                                    <dt><a href="#">추천관람코스</a></dt>
-                                                    <dt><a href="#">관람안내도</a></dt>
-                                                    <dt><a href="#">관람에티켓</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">고객센터</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">고객소리함</a></dt>
-                                                    <dt><a href="#">자주하는 질문</a></dt>
-                                                    <dt><a href="#">분실물센터</a></dt>
-                                                    <dt><a href="#">홈페이지 바로잡기</a></dt>
-                                                    <dt><a href="#">공원 안전공지</a></dt>
-                                                    <dt><a href="#">안전신고센터</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="dep1">
-                                    <a href="#">동물원</a>
-                                    <div class="w100 pa">
-                                        <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
-                                            <li class="menu_title">
-                                                <h2>동물원</h2>
+                        </div>  <!-- imggnb -->
                         
-                                                    <p>희망과 삶의 활력이 느껴지는 힐링동물원</p>
-                        
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">동물원 소개</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">서울동물원 소개</a></dt>
-                                                    <dt><a href="#">동물원 역사</a></dt>
-                                                    <dt><a href="#">AZA 인증</a></dt>
-                                                    <dt><a href="#">동물교실</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">동물원 둘러보기</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">동물사 소개</a></dt>
-                                                    <dt><a href="#">동물원 인기코스</a></dt>
-                                                    <dt><a href="#">동물 보유현황</a></dt>
-                                                    <dt><a href="#">동물 생태설명회</a></dt>
-                                                    <dt><a href="#">이달의 동물</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">동물 이야기</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">동물보전이야기</a></dt>
-                                                    <dt><a href="#">동물복지이야기</a></dt>
-                                                    <dt><a href="#">동물진료방역</a></dt>
-                                                    <dt><a href="#">멸종위기동물</a></dt>
-                                                    <dt><a href="#">사육사노트</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">어린이동물원</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">어린이 동물원 소개</a></dt>
-                                                    <dt><a href="#">동물사 소개</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="dep1">
-                                    <a href="#">식물원</a>
-                                    <div class="w100 pa">
-                                        <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
-                                            <li class="menu_title">
-                                                <h2>식물원</h2>
-                        
-                                                    <p>서울시 최초의 공립 수목원</p>
-                        
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">식물원 소개</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">서울대공원 식물원 소개</a></dt>
-                                                    <dt><a href="#">테마가든 소개</a></dt>
-                                                    <dt><a href="#">식물원 발자취</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">식물원 둘러보기</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">전시온실</a></dt>
-                                                    <dt><a href="#">식물 주제원</a></dt>
-                                                    <dt><a href="#">식물표본전시관</a></dt>
-                                                    <dt><a href="#">식물 보유현황</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">테마가든 둘러보기</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">장미원</a></dt>
-                                                    <dt><a href="#">주제정원</a></dt>
-                                                    <dt><a href="#">테마가든 나들이</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="dep1">
-                                    <a href="#">산림휴양</a>
-                                    <div class="w100 pa">
-                                        <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
-                                            <li class="menu_title">
-                                                <h2>산림휴양</h2>
-                        
-                                                    <p>숲 속 가득한 음이온을 느껴보세요.</p>
-                        
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">치유의 숲</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">치유의 숲 소개</a></dt>
-                                                    <dt><a href="#">산림치유센터 소개</a></dt>
-                                                    <dt><a href="#">산림치유 프로그램</a></dt>
-                                                    <dt><a href="#">오시는길</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">산림욕장</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">산림욕장 소개</a></dt>
-                                                    <dt><a href="#">코스별 안내</a></dt>
-                                                    <dt><a href="#">대공원 둘레길</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">캠핑장</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">캠핑장 소개</a></dt>
-                                                    <dt><a href="#">시설안내</a></dt>
-                                                    <dt><a href="#">이용안내</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="dep1">
-                                    <a href="#">신청ㆍ참여</a>
-                                    <div class="w100 pa">
-                                        <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
-                                            <li class="menu_title">
-                                                <h2>신청ㆍ참여</h2>
-                        
-                                                    <p>교육 및 예약을 함께해보세요.</p>
-                        
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">교육ㆍ행사</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">교육 프로그램</a></dt>
-                                                    <dt><a href="#">온라인교육</a></dt>
-                                                    <dt><a href="#">교육 자료실</a></dt>
-                                                    <dt><a href="#">축제행사</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">간편 신청·예약</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">광장 예약</a></dt>
-                                                    <dt><a href="#">야구장 예약</a></dt>
-                                                    <dt><a href="#">캠핑장 예약</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">참여하기</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">이벤트</a></dt>
-                                                    <dt><a href="#">자원봉사</a></dt>
-                                                    <dt><a href="#">동행기금</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="dep1">
-                                    <a href="#">대공원 다多이슈</a>
-                                    <div class="w100 pa">
-                                        <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
-                                            <li class="menu_title">
-                                                <h2>대공원 다多이슈</h2>
-                        
-                                                    <p>대공원의 이야기가 펼쳐집니다.</p>
-                        
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">온라인 대공원</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">서울대공원 TV</a></dt>
-                                                    <dt><a href="#">대공원 앨범</a></dt>
-                                                    <dt><a href="#">대공원 스토리</a></dt>
-                                                    <dt><a href="#">모바일앱</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">대공원 VR 체험</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">동물원 VR</a></dt>
-                                                    <dt><a href="#">식물원 VR</a></dt>
-                                                    <dt><a href="#">테마가든 VR</a></dt>
-                                                    <dt><a href="#">돌고래이야기관 VR</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">오늘의 대공원</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">새소식</a></dt>
-                                                    <dt><a href="#">채용ㆍ입찰</a></dt>
-                                                    <dt><a href="#">언론보도</a></dt>
-                                                    <dt><a href="#">뉴스레터</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="dep1">
-                                    <a href="#">아카이브</a>
-                                    <div class="w100 pa">
-                                        <ul class="dep2 inner"> <!-- 일단 inner는 안 넣었음 -->
-                                            <li class="menu_title">
-                                                <h2>아카이브</h2>
-                        
-                                                    <p>서울대공원 역사아카이브</p>
-                        
-                                            </li>
-                                            <li>
-                                                <h3><a href="#">아카이브</a></h3>
-                                                <dl>
-                                                    <dt><a href="#">아카이브</a></dt>
-                                                    <dd></dd>
-                                                </dl>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="imggnb fx">
-                                <a class="material-symbols-outlined burger"  href="#" >menu</a>
-                                <img src="./img/kor.png" alt="#">
-                        
-                            </div>  <!-- imggnb -->
 
-                        </div> <!-- inner -->
+                    </div> <!-- inner -->
+                
+                </div> <!-- //header_bottom glass --> 
+                <div class="slide pr">
+                    <div class="slide1 on">
+                        <div class="textbox">
+                            <h2>블루마켓 오프라인 픽업 서비스</h2>
+                            <h3>가까운 편의점에서 블루마켓의
+                                건강식을 바로 받아보세요 </h3>
+                        </div>
                     </div>
-                   
-                     <div class="slide">
-                         <div class="slide1">
-                             <h2>오면 좋고 아니면 말고</h2>
-                         </div>
-                         <div class="slide2">
-                         </div>
-                         <div class="slide3"></div>
-                     </div>
-                     <div class="btnImg">
-                        <img src="./img/left.png" alt="left">
-                        <img src="./img/right.png" alt="right">
+                    <div class="slide2">
+                        <div class="textbox">
+                            <h2>탕후루보다 채소를 밝히는 금쪽이</h2>
+                            <h3>블루마켓의 채후루 솔루션을 받은후
+                                금쪽이가 달라졌어요!</h3>
+                        </div>
                     </div>
-                    <ul class="pager">
-                        <li class="on"><a href="#">배너1</a></li>
-                        <li><a href="#">배너2</a></li>
-                        <li><a href="#">배너3</a></li>
-                    </ul>
+                    <div class="slide3">
+                        <div class="textbox">
+                            <h2>fresh!fruit!flash!</h2>
+                            <h3>유기농 과일도시락 새벽배송 서비스</h3>
+                        </div>
+                    </div>
+                </div>          
             </nav>
-        </div>
-               
 
             <div class="icon pa fx">
                 <div><p><i class="fa-solid fa-bell fa-1.5x"></i>오늘 관람 가능합니다</p><p>오전 9시 ~ 오후 16시</p></div>
@@ -754,74 +754,48 @@
                             </article>
                         </div>
                     
-                        <div class="advertise">
+                    <div class="advertise">
                         <h2>행사ㆍ<span>이벤트</span></h2>
                         <div class="move">
-                            <span class="material-symbols-outlined" id="cleft">chevron_left</span>
+                            <span class="material-symbols-outlined">chevron_left</span>
                             <span class="pause"></span>
-                            <span class="material-symbols-outlined" id="cright">chevron_right</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
                         </div>
-                        <div class="adslide">
-                            <div class="adslide1"></div>
-                            <div class="adslide2"></div>
-                            <div class="adslide3"></div>
-                        </div>
-                        
+                        <img src="./img/advertise.png" alt="tiger">
                     </div>
 
                 </div>
             </div> <!-- //content2 -->
             <div class="content3">
                     
-                <div class="inner pr">
-                                       
-                    <h2 class="pa"><span>교육</span>프로그램</h2>
-                    <a class="arrow_l" href=javascript:;><img src="./img/swiper-btn-prev.png" alt="swiper-prev"></a>
-                    <a class="arrow_r" href=javascript:;><img src="./img/swiper-btn-next.png" alt="swiper-next"></a>
-                    <div class="banner pa fx">
-                        <div class="prog1">
-                                <div class="proga">
-                                    <h4>동물교실</h4>
-                                    <div>[교육 프로그램] 2024년 갑진년 청룡의 해를 맞이하여</div>
-                                </div>
-                        </div>
-                        <div class="prog2">
-                                <div class="proga">
-                                    <h4>식물교실</h4>
-                                    <div>[교육 프로그램] 교과서 속 살아숨쉬는</div>
-                                </div>
-                        </div>
-                        <div class="prog3">
-                                <div class="proga">
-                                    <h4>3</h4>
-                                    <div>[교육 프로그램] 식물원 속 자연변호사가 되어</div>
-                                </div>
-                        </div>   
-                        <div class="prog4">
-                                <div class="proga">
-                                    <h4>4</h4>
-                                    <div>[교육 프로그램] 식물원 속 자연변호사가 되어</div>
-                                </div>
-                        </div>   
-                        <div class="prog5">
-                                <div class="proga pr">
-                                    <h4>5</h4>
-                                    <div>[교육 프로그램] 식물원 속 자연변호사가 되어</div>
-                                </div>
-                        </div>   
-                        <div class="prog6">
-                                <div class="proga">
-                                    <h4>6</h4>
-                                    <div>[교육 프로그램] 식물원 속 자연변호사가 되어</div>
-                                </div>
-                        </div>  
-                    </div>  <!-- banner -->
-                </div> <!-- inner -->
-                
-
+                <div class="inner fx pr">
+                    <a class="arrow_l" href="#"><img src="./img/swiper-btn-prev.png" alt="swiper-prev"></a>
                     
-               
-            </div> <!-- //content3 교육프로그램-->
+                    <h2 class="pa"><span>교육</span>프로그램</h2>
+                    <div class="prog1 pr">
+                        <div class="proga pa">
+                            <h4>동물교실</h4>
+                            <div>[교육 프로그램] 2024년 갑진년 청룡의 해를 맞이하여</div>
+                        </div>
+                        <img src="./img/prog1.jpg" alt="#">
+                    </div>
+                    <div class="prog2 pr">
+                        <div class="proga pa">
+                            <h4>식물교실</h4>
+                            <div>[교육 프로그램] 교과서 속 살아숨쉬는</div>
+                        </div>
+                        <img src="./img/prog2.jpg" alt="#">
+                    </div>
+                    <div class="prog3 pr">
+                        <div class="proga pa">
+                            <h4>식물교실</h4>
+                            <div>[교육 프로그램] 식물원 속 자연변호사가 되어</div>
+                        </div>
+                        <img src="./img/prog3.jpg" alt="#">
+                    </div>   
+                    <a class="arrow_r" href="#"><img src="./img/swiper-btn-next.png" alt="swiper-next"></a>
+                </div> <!-- inner -->
+            </div> <!-- //content3 -->
 
             <div class="content4"> <!-- VR, SNS -->
                 <div class="inner fx">
@@ -852,20 +826,15 @@
                         </div>
                         </article>
                     </div>
-                    <div class="pack_sns">
-                        <div class="pack">
+                    <div class="park_sns">
+                        <div class="park">
                             <div><h3>패키지 안내</h3></div>
                             <div class="move">
-                                <span class="material-symbols-outlined" id="pleft">chevron_left</span>
+                                <span class="material-symbols-outlined">chevron_left</span>
                                 <span class="pause"></span>
-                                <span class="material-symbols-outlined" id="pright">chevron_right</span>
+                                <span class="material-symbols-outlined">chevron_right</span>
                             </div>
-                            <div class="pkslide">
-                                <div class="pkimg"><img src="./img/park.png" alt="package"></div>
-                                <div class="pkimg"><img src="./img/park.png" alt="package"></div>
-                                <div class="pkimg"><img src="./img/park.png" alt="package"></div>
-                                <div class="pkimg"><img src="./img/park.png" alt="package"></div>
-                            </div>
+                            <div class="park_img"><img src="./img/park.png" alt=""></div>
                         </div>
                         
                         <div class="sns">
@@ -898,31 +867,38 @@
             </div> <!-- //content4 -->
         
             <div class="content5"><!-- 인천광역시립박물관 - 포토갤러리 참고 -->
-                
-                <div class="inner pr">
+                <div class="content5_bg pa"></div>
+                <div class="inner">
                     <h2>아카이브</h2>
-                    <span class="material-symbols-outlined" id="arrow_b">
-                        arrow_back_ios_new
-                    </span>
-                    <span class="material-symbols-outlined" id="arrow_f">
-                            arrow_forward_ios
-                    </span>
-                    <div class="fx pr">
-                        <div class="arcs fx pa">
-                            <div class="arc1">
-                                <div class="arcaa"><a href="#">2018-02-25</a></div>
-                            </div>
-                            <div class="arc2">
-                                <div class="arcaa"><a href="#">2018-04-29</a></div>
-                            </div>
-                            <div class="arc3">
-                                <div class="arcaa"><a href="#">2018-06-05</a></div>
-                            </div>
-                            <div class="arc4">
-                                <div class="arcaa"><a href="#">2018-07-02</a></div>
-                           </div>
+                    
+                    <div class="fx">
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios_new
+                            </span>
+                        <div class="arca">
+                            <div class="a_img"><img src="./img/img_visual04.jpg" alt=""></div>
+                            <div class="arcaa"><a href="#">2018-02-25</a></div>
+                            
+                            
                         </div>
-                        
+                        <div class="arca">
+                            <div class="a_img"><img src="./img/graden.png" alt=""></div>
+                            <div class="arcaa"><a href="#">2018-04-29</a></div>
+                            
+                        </div>
+                        <div class="arca">
+                            <div class="a_img"><img src="./img/img_visual03.jpg" alt=""></div>
+                            <div class="arcaa"><a href="#">2018-06-05</a></div>
+                            
+                        </div>
+                        <div class="arca">
+                            <div class="a_img"><img src="./img/img_visual02.jpg" alt=""></div>
+                            <div class="arcaa"><a href="#">2018-07-02</a></div>
+                            
+                        </div>
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                            </span>
                     </div>
                 </div>
             </div> 
@@ -988,20 +964,14 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="js/jquery.min.js"> </script>
+
+    <script src="js/custom.js"></script>
+
     <script src="js/bxslider.min.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/map2.js"></script> 
-    <script src="js/slide.js"></script> 
-    <script src="js/adslide.js"></script> 
-    <script src="js/packslide.js"></script> 
-    <!-- <script src="js/prslide.js"></script>  -->
-    <script src="js/pr2slide.js"></script> 
-    <script src="js/arcaslide.js"></script> 
-    <!-- <script src="js/custom.js"></script> -->
-   
 </body>
 </html>

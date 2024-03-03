@@ -21,3 +21,8 @@ function slide(){
 setInterval(function(){
     slide();
 }, 3000);
+
+//
+
+//phone
+
