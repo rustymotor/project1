@@ -13,6 +13,7 @@ a:focus{
     background-color: #000;
     transform:translateY(-100%);
     transition:0.3s;
+    z-index:10000;
 }
 .skip_menu a:focus{
     transform:translateY(0);
