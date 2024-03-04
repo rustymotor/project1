@@ -1,8 +1,8 @@
-a:focus{
+/* a:focus{
     background-color: #000;
     color:white;
     outline:dashed 3px #f00;
-}
+} */
 .skip_menu a{                       
     position:absolute;
     width:100%;
