@@ -94,10 +94,10 @@ a{
     width:80px;
     height:80px;
     border-radius: 50px;
-    z-index: 999;
+    z-index: 999999999;
     padding:10px;
-    background-color:var(--primary2);
-    color:#FFFFE0;
+    background-color:#3b770c;
+    color:#ffffff;
     font-size:2.2rem;
     font-weight:600;
     text-align:center;
@@ -595,9 +595,9 @@ header:before {
 .zoo:hover .zooa>p{color:rgb(58, 58, 58);}
 .sikmul:hover .sikmula>p{color:rgb(58, 58, 58);}
 .sanrim:hover .sanrima>p{color:rgb(58, 58, 58);}
-.zoo:hover .material-symbols-outlined{color:var(--primary1);}
-.sikmul:hover .material-symbols-outlined{color:var(--primary1);}
-.sanrim:hover .material-symbols-outlined{color:var(--primary1);}
+.zoo:hover .material-symbols-outlined{color:rgb(58, 58, 58);}
+.sikmul:hover .material-symbols-outlined{color:rgb(58, 58, 58);}
+.sanrim:hover .material-symbols-outlined{color:vrgb(58, 58, 58);}
 
 
 .content3:after{ /* 배경 코끼리/이거 때문에 content1에 pr 줬음 */
@@ -1139,7 +1139,7 @@ label:hover{
     border-radius:20px 20px 0 0;
     padding:20px;
     font-size:2rem;
-    background-color:var(--primary2);
+    background-color:#3d7e0c;
     color:#fff;
 }
 
@@ -1349,7 +1349,7 @@ footer>.inner>.fx{
   font-size:1.6rem;
   font-weight:600;
   background:rgb(153, 153, 153);
-  color:var(--text1);
+  color:#2e2e2e;
   text-align: center;
   padding:0px 0 10px 0;
 }
