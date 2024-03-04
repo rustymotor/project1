@@ -11,7 +11,10 @@
 /* body{
     box-sizing:border-box;
 } */
-a{text-decoration:none;color:black;}
+a{
+    text-decoration:none;
+    user-select: none;
+    color:black;}
 /* .blur {
     backdrop-filter: blur(10px);
 } */
@@ -87,22 +90,24 @@ a{text-decoration:none;color:black;}
 .top_btn{
     position:fixed;
     top:80%;
-    right:2%;
-    width:60px;
-    height:60px;
+    right:0%;
+    width:80px;
+    height:80px;
     border-radius: 50px;
     z-index: 999;
     padding:10px;
     background-color:var(--primary2);
     color:#FFFFE0;
-    font-size:1.5rem;
+    font-size:2.2rem;
     font-weight:600;
     text-align:center;
-    line-height: 40px;
+    line-height: 60px;
     opacity:0;
+    transition:all 0.7s;
 }
 .top_btn.show{
     opacity:1;
+    right:2%;
 }
 /* 여기까지는 기본 */
 /* 여기부터 header_top----------------------- */
@@ -368,7 +373,7 @@ nav{width:100%; height:9.4rem;}
 .map_head{
     width:100%;
     height:50px;
-    background: var(--primary1);
+    background:#424242;
     line-height: 50px;
     
 }
@@ -380,10 +385,12 @@ nav{width:100%; height:9.4rem;}
 .map_head p:first-child{
     left:48%;
     line-height: 50px;
+    color:white;
 }
 .map_head p:last-child{
     left:50%;
     font-size:2rem;
+    color:white;
 }
 
 /* .map:hover .sitemap{
@@ -864,21 +871,27 @@ label:hover{
 }
 .adslide1{
     background:url(../img/advertise.png) no-repeat top/cover;
+    
 }
 .adslide2{
     background:url(../img/ad1.jpg) no-repeat top/cover;
+    left:200%;
 }
 .adslide3{
     background:url(../img/ad2.jpg) no-repeat top/cover;
+    left:200%;
 }
 .adslide4{
     background:url(../img/ad3.jpg) no-repeat top/cover;
+    left:200%;
 }
 .adslide5{
     background:url(../img/ad4.png) no-repeat top/cover;
+    left:200%;
 }
 .adslide6{
     background:url(../img/ad5.jpg) no-repeat top/cover;
+    left:200%;
 }
 
 .move{
@@ -1163,9 +1176,11 @@ label:hover{
 }
 .pkimg2{
     background:url(../img/pk2.png) no-repeat top/contain;
+    left:200%;
 }
 .pkimg3{
     background:url(../img/park.png) no-repeat top/cover;
+    left:200%;
 }
 
 .pkimg>img{
@@ -1224,6 +1239,7 @@ label:hover{
     border:1px solid #888;
     padding:40px;
     height:500px;
+    background:white;
 }
 .content5>.inner>h2{
     font-weight:500;
@@ -1302,10 +1318,13 @@ footer{
 footer>.inner>.fx{
     gap:30px;
 }
+.logogrey>img{
+    width:150px;
+}
 .selectset{
     display:flex;
-    margin-left:330px;
-   gap:100px;
+    margin-left:210px;
+    gap:100px;
 }
 
 .select>ul{
@@ -1326,12 +1345,12 @@ footer>.inner>.fx{
 }
 .select p{
   width:150px;
-  font-size:2rem;
+  font-size:1.6rem;
   font-weight:600;
   background:rgb(153, 153, 153);
   color:var(--text1);
   text-align: center;
-  padding:0px 0 5px 0;
+  padding:0px 0 10px 0;
 }
 
 footer .fx:last-child{
@@ -1342,36 +1361,34 @@ footer .fx:last-child{
 }
     
 .info{
-    width:700px;
+    width:800px;
     margin-top:20px;
 }
 .info>div{
+
     display:inline-block;
     margin-right:40px;
 }
+.info>div>a{
+    font-size:1.3rem;
+ 
+}
 .address{
-    font-size:1.5rem;
+    font-size:1.3rem;
     width:700px;
     margin-top:2rem;
 }
 .copyright{
-    font-size:1.5rem;
+    font-size:1.3rem;
     width:700px;
     margin-top:4rem;
 }
-.call{
-    font-size:2rem;
-    margin-top:6rem;
-    margin:0px 120px 0 0;
-}
+
 .call>div{
+    font-size:1.3rem;
     display:inline-block;
 }
-.call>div:last-child{
-    display:inline-block;
-    margin:10px 0 0 0px;
-    font-size:2rem;
-}
+
 .mark>img{
     width:100px;
     height:60px;
