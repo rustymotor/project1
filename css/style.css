@@ -461,7 +461,8 @@ nav{width:100%; height:9.4rem;}
 .content3,
 .content4,
 header,
-main {
+main,
+footer {
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -1397,5 +1398,24 @@ footer .fx:last-child{
 }
 .logogrey{
     margin-top:20px;
+}
+.htmlvalidator{
+    position:absolute;
+    right:7%;
+    bottom:10%;
+    z-index:100;
+    
+}
+.cssvalidator{
+    position:absolute;
+    right:0;
+    bottom:10%;
+    z-index:100;
+}
+.htmlvalidator>img{
+ height:40px;
+}
+.cssvalidator>img{
+    height:40px;
 }
 /* phone */
