@@ -9,7 +9,7 @@ $(()=>{
     function timer(){
         setIntervalID=setInterval(()=>{
             slideFn();
-        },3000);
+        },4000);
     }
     timer();
     //슬라이드 인덱스번호계산함수
