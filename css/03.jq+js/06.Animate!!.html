@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        position: absolute;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        opacity:0;
+      }
+    </style>
+  </head>
+  <body>
+        <div class="box box1">상자1</div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+          $(() => {
+            $(".box1").animate({left:'250px',opacity:1,width:'200px',height:'200px'},1000,'easeOutBounce');
+            //jquery api documentation에서 animate에서 찾아보면(객체,숫자, string)
+            //애니메이션의 종류는 jquery ui에서 api docu-easing에 보면 있다.
+          });
+        </script>
+  </body>
+</html>

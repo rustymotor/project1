@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <h1>탐색 선택자 및 html조작</h1>
+        <h2>탐색 선택자</h2>
+        <ul id="list1">
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+            <li>리스트5</li>
+            <li>리스트6</li>
+            <li>리스트7</li>
+        </ul>
+        <ul id="list2">
+            <li>리스트8</li>
+            <li class="theObj">리스트9</li>
+            <li><span>리스트10</span></li>
+            <li>리스트11</li>
+            <li><a href="#">리스트12</a></li>
+            <li>리스트13</li>
+            <li>리스트14</li>
+        </ul>
+        <h2 class="theTitle">html 조작</h2>
+        <ul id="list3">
+            <li class="obj1">list_2</li>
+            <li>list_3</li>
+            <li>list_4</li>
+            <li>list_5</li>
+        </ul>
+        <ul id="list4">
+            <li class="obj1">list_2</li>
+            <li>list_3</li>
+            <li>list_4</li>
+            <li>list_5</li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script>
+        let list1=$('#list1 li')
+        list1.css('background','pink');
+        list1.each((index,li)=>{
+            console.log(index);
+            console.log(li);
+            let oriText=$(li).text();
+            console.log(oriText);
+            const newText=`${oriText}:${index}`;
+            console.log(newText);
+            $(li).text(newText);
+            
+        });
+        list1.eq(2).css('background','skyblue');
+        let list2=$('#list2>.theObj');
+
+        list2.css('color','purple');
+        //attr:attribute
+        //attr(인자) 속성 가져와라
+        //attr(인자,인자) 속성을 바꿔라
+
+        let list2a=list2.attr('class');
+        console.log(list2a);
+        list2.text(list2a); //list2의 텍스트를 list2a로 교체
+        //
+        list2.attr('title',list2a); //list2의 title 속성에 list2a 속성 넣기
+
+
+        //조작
+        let list4=$('#list3');
+        list4.css('border','1px solid red');
+        //첫째 요소 추가하기
+        list4.prepend('<li>prepend</li>')
+        list4.append('<li>append</li>')
+        list4.children('li:nth-child(3)').css('color','red').after("<li>추가로넣음</li>");
+        //위의 건 자식추가
+        //밑에건 형제추가
+        list4.before('<div>형제1</div>');
+        list4.after('<div>형제2</div>');
+
+    
+        
+    </script>
+</body>
+</html>
