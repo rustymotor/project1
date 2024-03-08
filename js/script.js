@@ -22,8 +22,11 @@ $(window).scroll(function () {
   });
   //누르면 올라가기
  
-  $('.top_btn').on('click',function(){
-    window.scrollTo({top : 0, behavior: 'smooth'}); 
+  $('.top_btn').on('click',function(e){
+    e.preventDefault();
+    $('html,body').animate({scrollTop:0},500,'easeOutQuart');
 
   })
 
+  //스크롤바--------------------------------------------------------------------
+  

@@ -111,6 +111,68 @@ a{
     opacity:1;
     right:2%;
 }
+/* 스크롤바 -------------------------------------------------------*/
+.progress{
+    position:fixed;
+    left:0%;
+    top:0px;
+    height:70px;
+    text-align:center;
+    line-height:1;
+    width:100%;
+    z-index:100;
+}
+
+.progress span{
+    position:absolute;
+    display:block;
+
+}
+.progress .bar{
+    width:0%;
+    height:100%;
+    background-color: rgba(93, 255, 61, 0.253);
+
+}
+
+/* 스티키헤더----------------------------------------------------------------- */
+/* .glass{
+	
+}
+.glass>.inner{
+    display:flex;
+    width:960px;
+    margin:auto;
+    justify-content: space-around;
+} */
+.primary-nav{line-height: 65px;}
+.primary-nav ul{display:flex;gap:20px;}
+
+/* clone */
+.glass-clone{
+	/* filter:drop-shadow(0 2px 5px rgba(0,0,0,0.5)); */
+	filter:drop-shadow(0 2px 5px rgba(255, 255, 255, 0.9));
+	/* background-color: white; */
+	backdrop-filter:blur(10px);
+	opacity:1;
+	position:fixed;
+	top:-150px;
+	left:0;
+	right:0;
+    height:70px;
+    color:white;
+	transition:top .5s;
+    z-index:200;
+}
+.glass-clone.visible{
+	top:0px;
+}
+/* .glass-clone>.inner{
+    display:flex;
+    width:960px;
+    margin:auto;
+    justify-content: space-around;
+} */
 /* 여기까지는 기본 */
 /* 여기부터 header_top----------------------- */
 header{
