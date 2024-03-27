@@ -38,3 +38,4 @@ $(window).scroll(function () {
     autoplay:true,
     path:'./tiger_animation.json',
 })
+

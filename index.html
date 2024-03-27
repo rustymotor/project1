@@ -13,6 +13,7 @@
     <meta property="og:site_name" content="최인혁의 프로젝트1"> 
     <meta property="og:description" content="신입 퍼블리셔 최인혁 첫번째 프로젝트입니다.">
     <title>서울대공원</title>
+ 
     <link rel="icon" href="./img/logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="./css/reset.css">
@@ -31,6 +32,7 @@
         <a href="#content3">본문 3으로 이동</a>
         <a href="#content4">본문 4로 이동</a>
         <a href="#content5">본문 5로 이동</a>
+        <a href="#content6">본문 5로 이동</a>
     </div>
     <div class="popup">해당 사이트는 학습용으로 제작되었으며 서울대공원과 무관합니다.
         구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
@@ -892,16 +894,7 @@
                             </div>
                         </div>
                         
-                        <div class="sns">
-                            <div><h3>뉴스레터 <br> 구독하기</h3>
-                            </div>
-                            <div class="sns_icon fx">
-                                <div><img src="./img/youtube.png" alt="youtube"></div>
-                                <div><img src="./img/facebook.png" alt="youtube"></div>
-                                <div><img src="./img/instagram.png" alt="youtube"></div>
-                                <div><img src="./img/kakao-talk.png" alt="youtube"></div>
-                            </div>
-                        </div>
+                        
                     </div>
                     
                     <!-- <div class="sns pa">
@@ -920,8 +913,26 @@
                     
                 </div>  <!-- //inner -->
             </div> <!-- //content4 -->
-        
-            <div class="content5" id="content5"><!-- 인천광역시립박물관 - 포토갤러리 참고 -->
+            <div class="content5" id="content5">
+                <div class="inner pr">
+                    <h2>오시는 길</h2>
+                    <div class="fx">
+                        <div id="map" style="width:520px;height:400px;"></div>
+                        <div class="sns">
+                                <div><h3>뉴스레터 <br> 구독하기</h3>
+                                </div>
+                                <div class="sns_icon fx">
+                                    <div><img src="./img/youtube.png" alt="youtube"></div>
+                                    <div><img src="./img/facebook.png" alt="youtube"></div>
+                                    <div><img src="./img/instagram.png" alt="youtube"></div>
+                                    <div><img src="./img/kakao-talk.png" alt="youtube"></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="content6" id="content6"><!-- 인천광역시립박물관 - 포토갤러리 참고 -->
                 
                 <div class="inner pr">
                     <h2>아카이브</h2>
@@ -1022,6 +1033,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=27c11a27d75d49c4313264fe2679aead"></script>
+    <script src="js/kakao.js"></script>
     <script src="js/script.js"></script>
     <script src="js/bxslider.min.js"></script>
     <script src="js/map.js"></script>
@@ -1035,6 +1048,7 @@
     <script src="js/arcaslide.js"></script> 
     <script src="js/scrollbar.js"></script> 
     <script src="js/stickyMenu.js"></script> 
+
     <!-- <script src="js/custom.js"></script> -->
    
 </body>
